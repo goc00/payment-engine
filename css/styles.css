@@ -1,0 +1,36 @@
+body{
+    margin: 0;   
+}
+#wrap{
+  background:url(../img/001.png) no-repeat center;
+  height:516px;
+  }
+.respo{
+  display: none;
+}  
+.terminos{
+    margin-top: 15%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: Georgia, Cambria, Times, "Times New Roman";
+    font-size: 10px;
+    text-align: justify;    
+    }
+@media screen and (max-width: 480px){
+  #wrap{
+      display:none;
+      }
+  .respo{
+    display: block;
+    text-align: center;
+  } 
+  .terminos {
+    margin-top: 2%;
+    }    
+}
+@media screen and (min-width: 480px) and (max-width: 700px){
+.terminos {
+    margin-right: -10%;
+    margin-top: 2%;
+    } 
+}

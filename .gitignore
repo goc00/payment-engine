@@ -1,0 +1,44 @@
+.DS_Store
+
+application/cache/
+!application/cache/index.html
+!application/cache/.htaccess
+
+application/logs/*
+!application/logs/index.html
+!application/logs/.htaccess
+
+user_guide_src/build/*
+user_guide_src/cilexer/build/*
+user_guide_src/cilexer/dist/*
+user_guide_src/cilexer/pycilexer.egg-info/*
+/vendor/
+
+# IDE Files
+#-------------------------
+/nbproject/
+.idea/*
+
+## Sublime Text cache files
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+
+files/pdfs/*.pdf
+
+# LOGs Files
+#-------------------------
+*.log
+
+# Config Folder
+#-------------------------
+application/config/config.php
+application/config/database.php
+application/config/payu.php
+application/config/cardinal.php
+application/config/webpay.php
+application/config/oneclick.php
+application/config/api.php
+application/controllers/v2/__Payurecurrence.php

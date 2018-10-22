@@ -1,0 +1,21 @@
+[
+      {"Pais":"CL", "IdCobro":32423, "Monto":1490, "MedioPago":"TC", "IdPlan":6, "Moneda":"CLP", "Principal":1, "IdGroup":191},
+	  {"Pais":"CL", "IdCobro":32112, "Monto":250, "MedioPago":"MT", "IdPlan":6, "Moneda":"CLP", "Principal":0, "IdGroup":191},
+	  {"Pais":"CL", "IdCobro":32423, "Monto":3, "MedioPago":"PP", "IdPlan":6, "Moneda":"USD", "Principal":0, "IdGroup":191},
+	  {"Pais":"CL", "IdCobro":32423, "Monto":990, "MedioPago":"WPP", "IdPlan":6, "Moneda":"CLP", "Principal":0, "IdGroup":191},
+	  {"Pais":"CL", "IdCobro":32423, "Monto":1990, "MedioPago":"TC", "IdPlan":22, "Moneda":"CLP", "Principal":0, "IdGroup":191},
+	  {"Pais": "PE", "IdCobro": 32423, "Monto": 6000, "MedioPago":"TC","IdPlan":6, "Moneda": "CLP", "Principal": 1, "IdGroup": 192},
+	  {"Pais": "PE", "IdCobro": 32112, "Monto": 200, "MedioPago":"MT","IdPlan":6, "Moneda": "CLP", "Principal": 0, "IdGroup": 192},
+	  {"Pais": "DO", "IdCobro": 32112, "Monto": 20, "MedioPago":"TC","IdPlan":6, "Moneda": "CLP", "Principal": 0, "IdGroup": 193},
+	  {"Pais": "DO", "IdCobro": 33324, "Monto": 20, "MedioPago":"MT","IdPlan":6, "Moneda": "CLP", "Principal": 0, "IdGroup": 193},
+	  
+	  {"Pais":"CL", "IdCobro":32423, "Monto":990, "MedioPago":"TC", "IdPlan":3, "Moneda":"CLP", "Principal":1, "IdGroup":194},
+	  {"Pais":"CL", "IdCobro":32112, "Monto":250, "MedioPago":"MT", "IdPlan":3, "Moneda":"CLP", "Principal":0, "IdGroup":194},
+	  {"Pais":"CL", "IdCobro":32112, "Monto":3, "MedioPago":"PP", "IdPlan":3, "Moneda":"USD", "Principal":0, "IdGroup":194},
+	  {"Pais":"CL", "IdCobro":32112, "Monto":990, "MedioPago":"WPP", "IdPlan":3, "Moneda":"CLP", "Principal":0, "IdGroup":194},
+	  {"Pais":"CL", "IdCobro":32112, "Monto":1990, "MedioPago":"TC", "IdPlan":22, "Moneda":"CLP", "Principal":0, "IdGroup":194},
+	  {"Pais": "PE", "IdCobro": 32423, "Monto": 6000, "MedioPago":"TC","IdPlan":3, "Moneda": "CLP", "Principal": 1, "IdGroup": 195},
+	  {"Pais": "PE", "IdCobro": 32112, "Monto": 200, "MedioPago":"MT","IdPlan":3, "Moneda": "CLP", "Principal": 0, "IdGroup": 195},
+	  {"Pais": "DO", "IdCobro": 32112, "Monto": 20, "MedioPago":"TC","IdPlan":3, "Moneda": "CLP", "Principal": 0, "IdGroup": 196},
+	  {"Pais": "DO", "IdCobro": 32112, "Monto": 20, "MedioPago":"MT","IdPlan":3, "Moneda": "CLP", "Principal": 0, "IdGroup": 196}
+]

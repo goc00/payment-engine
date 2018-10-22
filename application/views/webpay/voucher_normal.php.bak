@@ -1,0 +1,88 @@
+<?php $this->load->view("includes/top_view"); ?>
+	
+<div class="table">
+	<div class="td" style="background-color:<?= $bgColor ?>; color:<?= $fontColor ?>">
+		<div class="container">
+			
+			<?php if(!is_null($logo)) { ?>
+				<div><img src="<?= $logo ?>" alt="" /></div>
+			<?php } ?>
+			<div style="font-size:.7em">
+	
+			<?php if($error == 0) { ?>
+				
+				<h2>Transacci&oacute;n realizada satisfactoriamente</h2>
+				
+				<div class="div-details">
+					<div>N&uacute;mero Orden de Compra:</div>
+					<div><b><?= $buyOrder ?></b></div>
+				</div>
+				<div class="div-details">
+					<div>Nombre Comercio:</div>
+					<div><b>3GMotion S.A.</b></div>
+				</div>
+				<div class="div-details">
+					<div>Monto:</div>
+					<div><b><?= $amount." ".$currency ?></b></div>
+				</div>
+				<div class="div-details">
+					<div>C&oacute;digo Autorizaci&oacute;n:</div>
+					<div><b><?= $authorizationCode ?></b></div>
+				</div>
+				<div class="div-details">
+					<div>Fecha Transacci&oacute;n:</div>
+					<div><b><?= $transactionDate ?></b></div>
+				</div>
+				<div class="div-details">
+					<div>Tipo Pago:</div>
+					<div><b><?= $paymentType ?></b></div>
+				</div>
+				
+				<div class="div-details">
+					<div>Tipo Cuotas:</div>
+					<div><b><?= $sharesType ?></b></div>
+				</div>
+				<div class="div-details">
+					<div>N&uacute;mero Cuotas:</div>
+					<div><b><?= $sharesNumber ?></b></div>
+				</div>
+				
+				<div class="div-details">
+					<div>Tarjeta Cr&eacute;dito:</div>
+					<div><b><?= $cardNumber ?></b></div>
+				</div>
+				<div class="div-details">
+					<div>Descripci&oacute;n:</div>
+					<div><b><?= $description ?></b></div>
+				</div>
+				
+				<button onClick="goBack('<?= $returnUrl ?>')" class="normal-btn">Retornar a Comercio</button>
+				
+			<?php } else { ?>
+				
+				<div class="div-details">
+					<div>Transacci&oacuten Rechazada N&deg;:</div>
+					<div><b><?= $buyOrder ?></b></div>
+				</div>
+				
+				<div style="text-align:left;font-size:.8em;margin:40px auto">
+					<div style="font-weight:bold">Las posibles causas de este rechazo son:</div>
+					<ul>
+						<li>Error en el ingreso de los datos de su tarjeta de Cr&eacute;dito (fecha y/o c&oacute;digo de seguridad).</li>
+						<li>Su tarjeta de Cr&eacute;dito no cuenta con el cupo necesario para cancelar la compra.</li> 
+						<li>Tarjeta a&uacute;n no habilitada en el sistema financiero.</li>
+					</ul>
+				</div>
+
+				<button onClick="goBack('<?= $errorUrl ?>')" class="normal-btn">Retornar a Comercio</button>
+			
+			<?php } ?>
+				
+			
+			</div>	
+			
+			
+		</div>
+	</div>
+</div>
+<?php $this->load->view("includes/bottom_view"); ?>

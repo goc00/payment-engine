@@ -1,0 +1,108 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Core - Payment",
+		"_postman_id": "aaef8037-5b7c-ef3e-2d43-6c7b44c17f00",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "AWS Api Gateway",
+			"description": "",
+			"item": [
+				{
+					"name": "[V2] Countries - Get",
+					"request": {
+						"url": "{{apigateway-v2}}/country/1234",
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "YVWgBcgK9r62iEJ4IU6501PyhsQnmdoJ7smoKexE",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "[V2] Channels - Get",
+					"request": {
+						"url": "{{apigateway-v2}}/channels/1234/1",
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "YVWgBcgK9r62iEJ4IU6501PyhsQnmdoJ7smoKexE",
+								"description": ""
+							},
+							{
+								"key": "Cache-Control",
+								"value": "no-cache, no-store, must-revalidate",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "[V2] Trx - Get",
+					"request": {
+						"url": "{{apigateway-v2}}/transactions/1234/-/0/10",
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "YVWgBcgK9r62iEJ4IU6501PyhsQnmdoJ7smoKexE",
+								"description": ""
+							},
+							{
+								"key": "Cache-Control",
+								"value": "no-cache, no-store, must-revalidate",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "[V2] Trx - Init",
+					"request": {
+						"url": "{{pe3g-aws-v2}}/transactions",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Cache-Control",
+								"value": "no-cache, no-store, must-revalidate",
+								"description": ""
+							},
+							{
+								"key": "x-api-key",
+								"value": "{{x-api-key}}",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"idUserExternal\": \"idUserExternalNormeno\",\n\t\"codExternal\": \"codExternalNormeno\",\n\t\"urlOk\": \"http://url-ok1.com\",\n\t\"urlError\": \"http://url-error1.com\",\n\t\"urlNotify\": \"http://url-notify1.com\",\n\t\"commerceID\": \"1234\",\n\t\"amount\": \"500\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
