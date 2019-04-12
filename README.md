@@ -1,8 +1,4 @@
-[![Digevo Logo](http://digevogroup.digevoventures.com/wp-content/uploads/sites/9/2017/07/logodigevo.png)](http://digevo.com/)
-
-# Digevo Core - Motor de Pagos
-
-# `Esta documentación es de la versión anterior (la que ya se está utilizando, si se requiere la nueva versión 2.0, se debe visitar la wiki`
+#  Motor de Pagos
 
 ## Conexión WebPay ambiente de integración
 
